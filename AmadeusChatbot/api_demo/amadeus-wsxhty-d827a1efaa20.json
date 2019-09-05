@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "amadeus-wsxhty",
+  "private_key_id": "d827a1efaa203a1e0b8871fcbc814179b2832213",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnk+Ne4x74YsAs\nfsSEN7tOCv2Q6zayTUXA8Q6cd9neKWDqwCJaXYdw4dT9SAt7DxbWT36m/+mcXCVR\nfDgsrxEze0PiV71GX58FTICzTngW/lknPm1wBNunTuKy7XozLPNWlIUYevhiZjvt\nBrkUa+G2L6kYAosZo/fhNbSvizGDdIATo6Bl/6DajKN4W8rnUwoGYkK7M0ZQapJ0\n6hskImJwrPmFzIVP2WJBXBkImIFSg1MSjF5Wvwvk+eDUrGUH3H7GbTNo6AEYr1Rk\nB1KMvsQs9aASdO72D13Ilanpv5mqmLx+u/syQd9A+JZ9nmaSMWVcYCt6ss5raVZj\nVPIaemGPAgMBAAECggEAFxT8tX4tLuNTOw2+/cM7bnV/Fa4AW7DfEcNiUtUDUmF6\nsvsCAFZvqHHCx5xb0Hh0mdJbTJ9lSx86GK42gpkekmvBHvUc4gubuLwf4hLF4czo\n9MnZgxt4MeRgv2qMcW4Ymm1co9GUUuFoEa7iYVi2v0RzUxZOmJqIMyIVoDRY/pUd\nE06/kBV4w2IKm312Skg+sp+6vOib2w+HV7OtJiwjEbEngbFvh73KDGYOlnpm+vUK\nsksqGChGZ79NipFVRERujgGW43CVsPZEuHIk5FIp+30SHxsDSHDAjVmRyGCAQNd6\nUGSI8ZKewc9fQCE4iyYEPWuulnEmZau4w70vas5oEQKBgQDk2sRxIhKQqreyQ0M1\nosZVF3MQtl8DDMzo0KUTTL4XNUxjDqnfHc66mXB9vyKxS9QNKqx77KzyJlQR1riT\n5Y6GtldpgxzsuKq7adNx1T4Nl5fK11rcVGRave6jUN80h7o5AE0RpqahJnCRKh0Q\nnhqnRch4SsYoMBMa0QthAtgu1wKBgQC7dG51tvqfk295AV3XxxnaFnvKdfHgaanJ\n/kDdtCIKH6nyozxdZFeSS8cbxKAOGDXKlvge5U9eg/r97jArnJlEpiimj5/FaDcH\njwIRtWcRV+HFkk2XOiCBRClrGrKa7JjUjHJymmTeSyK4LKr6AH6OHsMlcY4wWNPE\na7ES8zmkCQKBgDG7oOj9AI/Tqavhlh93yiX/vI+rMiaVh4oonVb+XGjqujjknOHR\ntnUylxGckct5sRFTbrxXiJXu4mImCWKKhlicE47oYUbIMsIbk0mvj5aglOoNtr8e\nz9gwYkW3c2oU/NEaUaU+VAO9OMUzI7HSyfQD5DbP+RQOrngraY+hcJ1tAoGAVVQC\nlALewpTSQTqmBPrUgbmKT/awS37NkuzxifndJM6VBaXYbIqociecUr+GO+Q5WCaw\nex/WqSdasQwjUTbPbbhU+LyX9bwikIZAYt84M2TVmKGoQBZthWoJkH9unablSptD\n3Xb6Q1XgUAXFLlfbQ8Ys/nZaSxekDd0XlZCxxEECgYBJkiGzmXyNlp8CKQAdvvdK\nq76gfdrNA/aF3vKi8KjN53ipSIljyOXyTx3hO7elVv1auMm2FDilsFBla2tITlbu\nLQV7HaEJx36zJD3e+g1AbklWbQ4J42hWfaEQxv5lPPbY4P96AaHcf9CMGo5E2mWe\nTLG5UfPyEAvfrbzcTPKbig==\n-----END PRIVATE KEY-----\n",
+  "client_email": "calculuszhang@amadeus-wsxhty.iam.gserviceaccount.com",
+  "client_id": "109254623926363080858",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/calculuszhang%40amadeus-wsxhty.iam.gserviceaccount.com"
+}
