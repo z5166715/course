@@ -1,0 +1,1146 @@
+title,questions,answers
+I can not find the three videos on this page,"Professor, Sorry, accordong to the message you sent to us, there should be three videos about Unix and Python. Unfortunately, I can not find them on this wedsite~ So could you please tell me where exactly the videos are? Best wishes",https://edstem.org/courses/1189/lessons/  here it is 
+Peer study group,"Is anyone interested in forming a peer study group to meet on weekends (Saturday or Sunday) or weeknights (Tuesday or Friday) at UNSW/CBD? If you are interested, can you please comment below with your preferred time and location?",good idea~ let‘s form a group. 
+Lecture_1 practice_Dict,I was trying to practise the turning machine example you taught in the lecture and I am struck with dictionary order when I run the for iteration in the instructions dictionary. I have attached the screen shots for your reference.The sequence of the keys in the output has changed surprisingly.,"Hi Phanindra, a dictionary is an unordered structure; we can iterate over all keys, but they are then enumerated in an order which is arbitrary, it can be different from machine to machine, and from run to run on a given machine."
+Inaccuracy of standard deviation,"I am doing Lab_1 and find out that the standard deviation calculated manually is not consistent with the one calculated by standard module statistics. here is my code snippet
+size = len(L)
+L.sort()
+mean = sum(L) / size
+median = (L[size // 2] + L[size // 2 - 1]) / 2 if size % 2 == 0 else L[size // 2]
+standard_deviation = sqrt(sum([(e-mean) ** 2 for e in L]) / size)
+is inaccuracy caused by accumulated inaccuracy of float numbers calculation or I messed something up? Thanks
+
+","Hi Tianle, I guess you are importing and using stdev rather than pstdev from the statistics module, hence estimate the the standard deviation from a sample rather than computing it from the population."
+Doubt regarding enumerate(),"I had this doubt. I was looking at the functions in the Jupyter sheets where I came across this. Question : How is the output generated? For instance in the first command, the enumeration is being done in sorted/random manner? My thinking was that it would be sorting the set and then assigning integar values to get => [(0,10),(1,15),(2,25),(3,40)]. Is it being done randomly? If not what is happening behind the scene?
+
+I tried with other command. Here too I am confused whats happening:",">>> type({100,200,300,400})
+
+<class 'set'>
+
+The type of {100,200,300,400} is 'set'. 'set' is unordered, so you cannot access the values using index unlike 'list' or 'tuple'.
+
+More details: https://docs.python.org/3.6/library/stdtypes.html?highlight=set#set-types-set-frozenset"
+Question about Drawing an Hexagram,"Dear Prof,
+
+I'm wondering if there is some way to set the line colour to invisible, or set the line width = 0 so that I can just overwrite the filling other than the frame. Every time I draw a new triangle with line colour set to ('') and filling colour set to ('white') the prev just seem to kind of colour fading. I tried to read the python 3.6 turtle graphics documentation but I couldn't find my answers. So I post for help.
+
+This question comes from my trying another way to draw an hexagram. That is, 
+1) To draw a triangle with red line, white filling; adjust its direction;
+2) To draw a new triangle with blue line, white filling; now I get this:3) To draw a new triangle in the same position as the first one, but with no line colour, and still white filling; now I get this:
+Seems like I've got the right shape, but the line colour is lighter. To make it look better, I continuously draw the fourth triangle to overwrite the blue one. Finally I get this: 
+In brief, how should I do to overwrite the filling to 'cut' the overlap lines but do nothing with the previous lines? I guess there may be some way like to set lines invisible or transparent...","Hi Tianpeng, I am sure you read the document at least as well as I did... The way I do it is draw one third of the line, then pen up and move by one third, then pen down and draw the remaining one third."
+"
+Lab","Silly question, are we to attend the lab tonight and complete the lab work with Matthew Perry,  6:30 to 8:30pm? Or is the session purely for people with queries only?
+
+
+Promie ","Lab work is not assessed (there are no marks for it), these ""lab sessions"" are consultation for you to attend only if you have questions, if you need support."
+Unix terminal issue,"As you have shown in the lecture, there are some commands operating on the terminal on your mac. however, the operating system I use on my laptop is windows 7 rather than Unix. So many commands you show on your mac are not recognized on my terminal. I wonder that are there equivalent commands for windows? Is it necessary for me to install a Unix operating system or use the virtual machine in order to catch you up on this terminal commands part? Am I going to get into further trouble if I keep running python on my windows system in this course?","Hi Xiaohan, there are indeed Windows equivalent to most Unix commands.
+
+https://www.lemoda.net/windows/windows2unix/windows2unix.html
+As the School machines are running Linux, and as I have a Mac, I can indeed only show you the Unix commands. It is not necessary for you to install a virtual machine on your windows machine, you can do so if you wish so, but it is not necessary for this course, you can score 100 in this course knowing nothing about the command line and Unix. I show you a few things which:
+
+- can be used on a School machine
+
+- provide some insights on working from the terminal (whatever the operating system happens to be).
+
+You can ignore it, or practice it on a School machine, or see what the Windows equivalents are, or install Linux on your Windows machine; just go for the option that suits you."
+Terminal software installation problems,"I followed the steps of the video software intallation Jupyter you posted. However, it didn't show the same results as it should be. Rather than the screenshot below, I don't know where is wrong and how to fix it up.","Hi Yufan, it is impossible for me to answer your question just based on this information, as all kinds of things could go wrong. I suggest you go to consultation tonight and ask the tutor to help out with this."
+related to Workspaces,"I can not get access to the Jupyter notebook sheets on Workspaces. 
+
+can you give me a permission to open it?  thank you . 
+
+","Hi Jingchang, if you click on the Fork button, doesn't that create your own copy that you can work with?"
+fstring doesn't work on drum,"python 3.5 doesn't have the f string feature and we don't have enough privilege to update new version of python on lab machine.
+
+I can surely do the lab at home using my computer but it actually feels better going to the lab :D","I wrote somewhere, but I should have made it clearer, that on the School machines, you can run python3.6 by executing python3.6"
+Lab_Q4 on standard deviation answer,,
+How much maths knowledge is expected?,"Just wondering what the expected level of mathematics knowledge is, for when the closed book exams roll along. Using the current lab as an example, is calculating standard deviation manually (rather than having knowledge of and using the built-in maths/statistics modules) similar to anything we might encounter in the exams?","Hi Scott, I am not expecting you to remember any maths in the exam. The lectures and the labs sometimes have mathematical material, but it is usually treated as more advanced and optional. Commonsense is essentially all you need to do well in this course."
+Lab1_task6 distance to the polygon edges,"I noticed you described ""distance from centre to edges of the octagon"" was 100, however when I drew it, I found unless I set the distance from centre to the vertices of the octagon as 100, the shape would not quite fit with your example. 
+
+I measured your sample figure; ratio of (distance from the top of triangle to the centre) / (distance from edge to the centre) is close to 1.95, which is in fact 180 / 100 / cos(pi / 8), but rather, (distance from the top of triangle to the centre) / (distance from octagon vertices to the centre) is close to 180 / 100. That means you might have set""distance from centre to vertices of the octagon"" as 100, not distance to edges.","Hi Feng, indeed, I wanted to say, I should have said, ""distance to a vertex of the inscribed octagon"". Thanks for pointing this out.
+
+To display Python code, you should not copy and paste it as text, but rather click on the <> button that allows you to insert Python code and run it:"
+Lab exercise,Will lab exercise be uploaded anywhere? so that students who not attending the lab can have a look and do those exercise in their own time?,"Solutions are posted one week later, in Resources, and also under Challenges for the flagged ones."
+Slack Group For Discussion,,
+Jupyter Notes for Lecture 2,"Please if you also upload the Jupyter notes for today's lecture as you had uploaded for lecture 1.
+
+You have uploaded the text file and not the Jupyter file.","Hi Himanshu, I have done it already, under Resources, and checking again, it seems to be the right file."
+Submitting the Quiz,Has the way to submit the quiz been published? Or do we just complete it in Ed under assignments?,"You can edit the file directly in Ed, or you can download the file, edit it locally, and then upload it. Eventually you have to click the Submit button. You can submit it as many times as you like. The last submitted version will be assessed."
+Quiz performance,"Quiz will be tested for performance? like with some really big numbers or it will be just the numbers we have in the pdf?
+
+By performance i mean memory, runtime and algorithm?","No no no, the PDF and associated tests in Ed show just examples of outputs, it just illustrates what the exercise is about, but I will use other test cases, and testing has to be taken seriously (will talk
+more about it on Monday). For this quiz, performance should not be an issue, the list won't be large."
+query regarding quiz,"I am relatively new to programming environment,  is the quiz only to do testing on the output of the code or do we have to make any changes in the code. If I am wrong I request you to highlight what is required to do.",if you need more detail re-watch lecture video (2:21:45) on moddle where Eric explains the requirement(how the list should be generated).
+About special case in Quiz 1,"If the current algorithm can handle the situation that there is only one element in the list, can we still call this situation a special case? In my opinion, classified discussion will be needed when the current method cannot handle some case. Am I correct?
+
+Or we defined the 1-element situation a special case just because of the consideration about time complexity?","Hi Jianyu, if you prefer, we can talk about ""simplest cases"". An empty list is the simplest case. Then a list of length 1 is the next simplest case... We should include what we consider to be all ""simplest cases"" in our test cases."
+How many line of code?,"Whoever finished the quiz1, would you mind sharing how many lines of code you wrote to complete M and N. Just to get a hint on improvement, I'm very sure mine can be reworked to someting smaller. 
+
+Mine:
+
+M = 11 Line
+
+N = 14 Line","For this short coding competition, I just implemented 2 line code to create M, but I don't think that shorter implementation is always better because it doesn't guarantee performance or readability. 
+
+We should be careful not to be blinded by tangible figures."
+"Lab 2, Question 3","Hi there, I'm having trouble understanding what this question means.
+
+It seems like it's asking to find all possible arrangements of numbers 1 - 9, in the pattern described, such that the multiplication is true and also the addition of the columns are all equal.
+
+However the given examples do not hold true when arranged in this way. I also don't understand what the 4th and fifth rows of asterisks are meant to represent (possibly space for larger numbers, up to seven digits? and then a row representing the addition of the columns?) I'm obviously misunderstanding, is there some other way it can be explained?
+
+","The two solutions show the multiplicand, the multiplier and the result of the multiplication (first, second and last line) but not the intermediate results (third and fourth lines)."
+Shall I post lab code?,"I just find that the due date of chanllenge iscoming.
+
+I am not sure if it is necessary to post the code.
+
+Does or it is okay if we just practised it ourselves?","Hi Keqiao, as mentioned in course outline and during lectures, labs are just for you to practice, they are not assessed."
+Please never share your code in any forum discussion,,"code can be posted after programs have been assessed (for quizzes and assignments) and after solutions have been released (for labs), but should not be posted before. This is of course essential for quizzes and assignments; posting code before submissions have been assessed is reprehensible and punishable by University policy on plagiarism. For labs, which are not assessed, it is indeed preferable to let everyone give their best shot for a week, till solutions are released. Then sharing code, comparing solutions, discussing the pros and cons of different designs and implementations, is a very valuable exercise. "
+"Lab 2 ,Q2","Hi professor, I have a question about the definition of 'perfect numbers'. As you input 100, and the result is 6 and 28. Does that mean there is only 2 perfect numbers range from 1 to 100. So how to explain 12 = 1 + 2 + 3 + 6, I think that 12 also has the characteristics of perfect numbers. Is that included? Thanks","Hi, mathematically, perfect number is equal to the sum of its proper divisors. Proper divisors here means a divisor other than itself. So 6 and 28 is a perfect number because sum of proper divisors of 6 {1,2,3} is the number 6 itself. Hope this helps, thanks."
+"Lab2, cycloidal_curves.pdf updated",,"The definition of period was incorrect in the original version, fixed in current version; thank you to Junnan Chen for having pointed it out."
+lab2 perfect number,"I think '1' is also a perfect number because 1 is a only divisor for itself and 1=1,therefore, 1 could be a perfect number
+
+Or 1 is special condition?","Hi Chenyang, we take only the proper divisors, meaning, excluding the number itself."
+Course consultation,Hi can any one please tell me where exactly will be consultation conduction on tuesday from 6 30 pm to 8 30 pm.  I mean the location???,See course outline.
+Problem with Quiz 1,"I was working on quiz 1 when I received an error and the code wouldn't execute anymore. I restarted by web browser and now I can't access quiz 1, it says ""There are no assignments yet. Check back later."".
+
+I've tried restarting my browser, clearing history and cookies, logging out and back in, but I still can't access the quiz again to finish my attempt.
+
+Is there something that I'm doing incorrectly to access the quiz?","Indeed, there is a problem,, no more message on this please, it might take some time to get back."
+Quiz 1 disappeared,"The Quiz 1 disappeared on 22:30 PM,today, I notice that the due date is Thursday.
+
+so I still code it...",It is back.
+Case in Quiz 1,"In the special case (quiz 1, second exercise: N) in which all the elements on the right have been taken already, should I take the rightmost element in the list or start from the left?
+
+Let's say L is: 4, 2, 3, 1, 4, 4
+
+After three steps N will be: 4, 4, 4
+
+L will be: 4, 2, 3, 1, 4, 4, with the underline meaning it is taken
+
+The next number should be 2 (go to the end of the list and if they are all taken start from the beginning) or 1, which is the rightmost number available?
+
+Thank you","Hi, If I understand correctly based on the test cases and also the description, when an index is taken, get back to the left-most and get the unused value. Please correct me if I am wrong, thanks."
+Lab 1 Q1,"in Lab 1, Qu 1 why is there an f in the print output statement:
+
+print(f'{Celsius ... }')
+
+I get the same output when i remove the f and use:
+
+print('{Celsius ...}')
+
+is it redundant or are there cases where it is important to include the f before the quote mark?","It seems to be a new function in python3.6. It is used to format string literals. 
+
+You can find the details in (PEP 498) https://docs.python.org/3/whatsnew/3.6.html"
+Lab2 Bayes,"It seems that I have difficulties understanding the question. As far as I know, Bayes is about conditional probability. I do not see anything related to that from the question.  I think just randomly rolled the dice and then record the result. Can anyone explain this for me. Thanks.",You need to compute the probability of a die being the chosen die given the value that is rolled.
+where to submit the completed program,where to submit the completed program,If you go to the assessments tab and then click on quiz 1 you can enter your code where the comment asking for it is and then press submit which is next to run. I hope this is the right way to submit it because that's what I did.
+String M requires 5 numbers,"I'm afraid I don't understand your reasoning for the answer you're giving for string M where only 4 numbers are generated.   The instruction requests 5 numbers: 1) middle, 2) first, 3) last, 4) second and 5) penultimate .  Therefore when a list of only 4 numbers is generated in L, one number must be repeated to get the correct result.   
+
+The sample PDF indicates: 
+
+""The generated list L is:
+
+[3, 3, 0, 2]
+
+Here is M:
+
+[0, 3, 2, 3]""
+
+But my reading of the question, the correct result for M is:
+
+[0, 3, 2, 3, 0]
+
+Am I reading the question wrong?  ","I think Dr.Martin was just making an example with 5 numbers, which are middle, first, last, second and penultimate. If your list only has 4 digits, then you get M as middle(pop), first(pop), last(pop) and the current first element, aka the penultimate element of the original list L."
+"Challenges - Mean, median, and standard deviation",,
+Lab2 question1,,
+Sample output for quiz 2,Is there a PDF for example output for quiz 2? I can't find it in the downloads section but I thought I saw it during the lecture.,"Hi Hon, it is there now."
+Standard Library,"We are allowed to use any module from the standard library for quizzes, right?","Hi Rod, the answer is yes."
+Question on quiz2,"If my input is 0 1 5, and I get a list of [3]. In this case, how would the output go? My output something like this:
+
+The fractions no greater than 1 that can be built from L, from smallest to largest, are:
+
+3
+
+The fraction closest to 1/2 is 3
+
+Is this correct? Or the output should be something else?","Hi Tiancong, no, recall that all fractions evaluate to 1 at most.
+
+The generated list is:
+
+[3]
+
+
+The fractions no greater than 1 that can be built from L, from smallest to largest, are:
+
+1
+
+The fraction closest to 1/2 is 1"
+For Quiz2,"If 1, 3, 9, 27 exists in generated List, how many ""1/3"" should show in fraction list?
+
+1 or 3?","Hi Haotian, just 1."
+"Quiz 2, error when testing","I think there might be an error in the expected answers for the quiz, as from test 5 and after there seems to be an extra 1 for the fractions no greater than 1.
+
+Output for test 5:
+
+The generated list is:
+
+[12, 13, 1]
+
+
+The fractions no greater than 1 that can be built from L, from smallest to largest, are:
+
+-    1/13  1/12  12/13
+
++    1/13  1/12  12/13  1
+
+The fraction closest to 1/2 is 1/12","Indeed, we take any pair of numbers a, b in the list, with a <= b, as we do not want to get a fraction greater than 1, and that gives us a/b, that we simplify, and output only once (what is unique is the fractions that we output). So indeed, we are sure to output 1 since our list contains at least one nonzero element (otherwise we exit), that we can divide by itself."
+A Word Game characters,"For the assignment, ""A Word Game,"" if a character appears only once in the input, can it be used multiple times when forming a word?","Hi Rod, no, we consume occurrences of characters in the input."
+A weird issue related to online submit,"A weird issue related to online submit
+","Hi Qeqiao, I can only reiterate my advice not to modify the code already written. You made it an issue."
+Pivoting Die Input,Is an input of a positive integer padded with spaces valid input?,"Hi Rod, it is, spaces are ignored when converting strings to ints.
+
+"
+Rubik’s rectangle,"My problem is the code consumes lots of time when I tested. The computing complexity increases exponentially with the steps, as a result, the code failed to pass the test when I tried to submit it online. My question is should I  optimize the algorithm to decrease the running time or it is just fine as the code output is correct.","Hi Jingming, every test will be run for 30 seconds, so your code should output a solution within that time, which should be much more than necessary. We will discuss an efficient approach to the problem."
+Poker Dice,"In the pdf, it is mentioned that ""No die is kept by inputting nothing"". Does nothing include a string of whitespaces? Or should it show the error message?","Hi Rod, yes, ""nothing"" includes whitespace."
+for Assignment question3,"When I submit my codes, it alarms that 'run_submissions.sh: line 40:   620 Done                    { sleep 0.2; echo ""eaeo rtsmnz"" | tee -a tmp_outputs.txt; }
+
+-        622 Killed                  | python3 highest_scoring_words.py'
+
+What's wrong with it?
+
+","Hi Hangyu, that means that Ed killed your program as it did not produce the output in the allocated time (30 seconds), so you need to make your code more efficient."
+Quiz 2 clarification question,"Is there any possibility that number 0 will be generated into list? In that case, x/0 may occur, then I assume a fraction of 0 should be printed?","0 should be included, as one of the test cases do have 0 as an answer."
+Quiz 2 question,"Can someone please explain what the line below means?
+
+- if ""fractions"" contains then 1/2, then the fact that 1/2 belongs to ""fractions"";
+
+The part 'contains then 1/2' is confusing.","Yes, sorry, typo, should have read: if ""fractions"" contains 1/2, ."
+generating list L,"1) With the three input arguments, is it possible to generated the singleton list [0]?
+
+2) I thought 2, 2, 2 would be a valid input, but why does the program give up on these arguments?","If you examine the code, the program may generate a list of all 0s. However, it will also exit the program and print ""failed to generate one strictly positive number, giving up."".
+
+It's because of the check below which is already in the scaffold.\"
+Trying to implement doctest,"Can the PDF provided with the quiz be used as testfile for doctest?
+
+if __name__ == '__main__':
+
+    f()
+
+    import doctest
+
+    doctest.testfile(""C:\Users\honyu\OneDrive\2017 Semester 2\COM9021 Principles of Programming\Quiz\Quiz 2\quiz_2.pdf"")
+
+I wrote the above code for it but I receive the following error.
+
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+
+What I'm trying to do is compare my program to the output provided in the sample output PDF using doctest.","That is probably because the quote you pasted is not the ASCII quote. You often need to edit parts of what you copy and paste from a pdf, quotes in particular."
+Quiz 2 Question,"0 can not be a denominator, so what will happen if the genarated list is [0, 0, 0, 0, 0], or [0] ?","If this is the case, the program exits automatically. But element 0 can be in your generated list during random generation. In that case you'll have to figure out a way to handle it in your code.The program will automatically exit. It's handled by Eric's code."
+Doubt quiz 2 output,"The output shows me a error as this:-
+
+TypeError                                 Traceback (most recent call last)
+
+<ipython-input-76-b57ecc11b82c> in <module>()
+
+     95 
+
+     96 print('\nThe fractions no greater than 1 that can be built from L, from smallest to largest, are:')
+
+---> 97 print('  ', '  '.join(e for e in fractions))
+
+     98 #print(fractions)
+
+     99 if spot_on:
+
+
+TypeError: sequence item 0: expected str instance, int found
+
+
+And if I remove this line underlined above and just write print(fractions), it works fine for me. And the output shows me in the form of this:-
+
+The generated list is:
+
+[12, 13, 1]
+
+
+The fractions no greater than 1 that can be built from L, from smallest to largest, are:
+
+[Fraction(1, 13), Fraction(1, 12), Fraction(12, 13), 1]
+
+The fraction closest to 1/2 is 1/12.
+
+So is it fine to get the output as above??",Of course the above output is not fine. Ed shows you it is not fine. You can use f to format.
+Testing quiz 2,"I finished the quiz 2 and tried to test it with different input rather than the sample. 
+
+The result shown ""Exceeded CPU Time"" when I tried to enter a length larger than 67, for example ""0 67 10"". 
+
+Do I need to change my code to make it more efficient?","Hi Kirsti, I will not test inputs longer than 1000 but still, as a valuable exercise, you should try and improve your code and deal with lists with one million elements."
+Quiz 2 Question (Ed output different from my jupyter output),"Why my Ed quiz 2 output is different with my jupyter output , both of them have the same code inputted. I copy paste the code from my jupyter into the Ed.
+
+",I think I accidentally delete a string from a print statement. I reset the code and paste it again and it works now. Thank you.
+List Comprehension vs Filter+Lambda combo,"In the Monday lecture, you showed two ways to filter, one is thru list comprehension, the other through filter + lambda. Both make sense, but I'm wondering which one would be more efficient to run from memory perspective? Which is more pythonic?","Hi Simon, if we want to answer this kind of question having time complexity in mind, then we need to run experiments and compare both constructs. The usual way to do it is to use functions from the timeitmodule. That is actually something I could show you in another Monday lecture... In terms of space complexity, both versions are essentially equivalent, being based on the iterator paradigm (something we will talk about)."
+about deque,,
+"Assignment 1, Q2","Just wondering, is there any hint or discussion you might have done related to Q2 of assignment 1 in your lecture? Does it involve any math or combination?","Hi Shoib, assignment 1 Q2 is to try out all patterns. Please ignore my first answer, hope it helps, thanks :)"
+Assignment question4,,
+"Assignment 1, Q2 submission issue",,
+Solution for quiz 2 and 3,"Hello doctor Martin, may you please upload the solution for quiz 2 and 3?Thank you bery much!","Hi Xiaohui, indeed, I forgot to upload the solution to quiz 2 under Resources, though it is accessible under Assessment. Done. For quiz 3, you have to wait till I send the results out."
+Slack study group,,
+Lecture program source code,Where can we find the source code for the last program which we didn't finish on the lecture?,"Hi Hui, you mean vigenere_cipher.py? Part of the material for Lecture 4."
+Quiz4,"I get this error in Ed while testing in Ed, although this function 'next' works fine in my local system. I am unable to sort out this issue.
+
+Input two distinct years in the range 1990 -- 2014: 1992 -- 2000
+
+Input a strictly positive integer: 4
+
+Traceback (most recent call last):
+
+File ""quiz_4.py"", line 62, in <module>
+
+next(forestf)
+
+File ""/usr/lib/python3.6/encodings/ascii.py"", line 26, in decode
+
+return codecs.ascii_decode(input, self.errors)[0]
+
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)","Hi Swarna, you probably need to provide
+
+encoding = 'utf-8'
+
+as an argument to open()."
+Quiz4,"For South Sudan, there is no data before 2011, but after 2011 it has data. How can we calculate this? Should we treat None-data as 0?
+
+","Hi Peng, we ignore countries for which we do not have data for both years, we do not treat None-data as 0, that would be wrong."
+silly doubt regarding the quiz,"Hi guys, I tried to check for quiz 4 resources under the resources and not finding any pdf with regard to expected outputs. Also when we access the data should we directly click on that link given or is it given to us like the names file used in the lecture yesterday?","Hi Sushma, had forgotten to upload the files under Resources, fixed. Both data files are provided and are supposed to be stored in the working directory."
+Quiz 4 - Ratio Precision,what should be the output ratio precision?,See sample outputs.
+Quiz 4 - Files assumption,"Will you be testing with different set of files say for example, files where countries are not ordered alphabetically? Or, say files wherein countries are not present from one file?","I will use precisely these two files, no others.
+
+"
+Quiz 4 - Output,"When printing the results where the number of countries is < N, do we need to change this part of the result ""Here are the top 10 countries or categories where"" to the actual number of countries? Or do we preserve N?","we do preserve N, this is implemented already, refrain the temptation to change it (I agree it could be improved...).
+
+"
+Mid-term exam time,"since the mid-exam is now approaching, when can we be advised the exact time on 8th Sept it will be held?
+
+if not mistaken, the course outline only shows the date of the exam.
+
+Since I have a day job, it would be greatly appreciated if the exam is to be at night time if you and other students are okay with it as it might be too late to ask for a day off now.","Hi Yunqi, booked now, 6:30 to 8:30."
+Quiz 4 - Tops for Countries Same Ratio,"In case same ratio, the output would be like bellow for top 5? Countries with same ratio counts for tops correct? And also, amongst those countries with same ration, order by lexicographic
+
+
+Example output Top 5:
+
+
+Australia (171.43)
+
+Iraq (171.43)
+
+Croatia (50.57)
+
+Azerbaijan (46.70)
+
+Iran, Islamic Rep. (46.70)",That's exactly what the specs in the stub say.
+Quiz 4,,
+"Assignments, Question 3, test 10 error message",,
+A question on quiz4 when top_n is too large,"In this quiz, some country do not have ratio, some country has ratio less than 0, what should we do when top_n is larger than the amount of countries that have positive ratio? Do not display these country in result?","Hi Meng, answered already, we display only the countries we found, so less than N."
+Assignment1 Question2,"I had a question about the running speed of code in question 2 (assignment1).
+
+O is the comparison group which is used for finding the same elements. If I write O =set(), O.add(M[0]), I will get the result 18 steps immediately, however if I write O = [], O.append(M[0]), the result 18 steps will appear after one and a half minute.All other codes are same. Could you please tell me why that happen?","Hi Ke, looking for an item in a set takes constant time, looking for an item in a list takes linear time on average. Here you can see the difference between both complexities at work"
+Quiz 4 - Strange output,,
+quiz_4 error,,
+Enquiry about some extreme case,"Helllo doctor Martin, I want to inquire several extreme cases. The first one is for quiz 4 and the assignment 1.4, they both involve files, so I want to ask should I consider the FileNotFoundError for both of them? The second one is about the strictly positive n used in the assignment 1.5 as an input for the simulation, here should I also consider what if the n is not a positive integer such as blank space, negative number or string? If yes, then what kind of exit word should I type in this case since there is no such a example shown in the PDF you gave to us. Thank you for your answer and have a nice day!","Hi Xiaohui, I will not test against this.
+
+More generally, often, even most of the time, it is perfectly fine to let Python generate the appropriate error. If we had to catch every possible error, then we would have to check that every function is called the way it is meant to be called, passing the right number of arguments, of the right type, it would result in a nightmare of a code, and it would be against Python's choice for flexibility (the so called ""duck typing"" principle)."
+Lab5 Q2 permutation,"Sorry I was confused about this sentence on Lab5, Q2:
+
+""It can be shown that the puzzle is solvable iff the permutation of the integers 1, . . . , 8, determined by reading those integers off the puzzle from top to bottom and from left to right, is even.""
+
+Does that mean finding the positions of each rows and columns in all possible 2- or 3-permutations of [1,2,3,4,5,6,7,8]?
+
+Take:
+
+1 2 3
+
+4 5 6
+
+7 8
+
+For example,  position of (4, 5, 6) in the total 3-permutations of [1,2,3,4,5,6,7,8] is 147.
+
+Or did you mean mathematically P(3,3) and P(2,2) with 3 or 2 numbers respectively? Or P(3,3)/P(3,8)?
+
+I just could not get it.....","Hi Feng, I was referring to this notion:
+
+https://en.wikipedia.org/wiki/Parity_of_a_permutation"
+Ass-5,,
+quiz4 output encode (not decode) problem,"I worked out my ratio value,but if I try to output,there is an encode error:
+
+
+File ""quiz_4.py"", line 140, in <module>
+
+print('\n'.join(country for country in countries))
+
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2019' in position 486:
+
+ordinal not in range(128)
+
+
+not like the decode error(plus decoding = 'utf8'),how could I solve this?","Hi I had the same issue yesterday when I tried to print a dictionary without looping it. As in say my dictionary is dictionary. Then the following line:
+
+print(dictionary)
+
+was causing error.
+
+However when I added a loop and printed the values form dictionary properly, that problem went away, as in :
+
+for item in dictionary:
+
+print(dictionary[item])"
+Q4 - Print Countries with Ratio Zero?,"We should also prints countries with ration = 0.00 right?
+
+for exemple, in the list bellow, Gabon should be printed correct?
+
+Thailand (0.31)
+
+Bhutan (0.30)
+
+Fiji (0.25)
+
+China (0.18)
+
+French Polynesia (0.03)
+
+Gabon (0.00)","Yes Jose, outputs are based on the true values, even though we limit output precision."
+Quiz 4 silly doubt,,
+Lab_5 : Most popular name,"I do not understand what does this mean:
+
+""and finds out the first year when
+ this name was most popular in terms of frequency of names being given"".
+
+Is this the year in which the name had the maximum relative frequency?",Yes
+PSA: Code Debugging,,
+Assignment 1 Q1 Submmit issue,,
+Quiz 4,"If two ratio are same, how can we order them, by lexicographic order or  original order in '.csv' document?",lexicographic order
+Quiz 4 - top_n,"Q1: How should we deal with the case 'N = 0', cuz the instruction says N should be strictly positive. But the program only raises a ValueError when N < 0. Does it mean we should consider it as a legal input and output normally with 0 country?
+
+Q2: Just to make sure if top_n is large enough (larger than the actual number of output). Should we just keep it or output an actual number instead? (e.g. top 31 countries: ... or top 10000 countries when N = 10000, actually 31 countries are printed)
+
+They might be silly questions but do confuse me.","Hi Tianpeng, should raise exception when N == 0, sorry for this.
+
+Q2 answered already, at least twice, do not change the output even if there are fewer countries to display."
+Assignment 1 Question 4,,
+Assignment 1 Q 2,,
+Compsci Labs.. Idle 3.6?,"I'm in the Bongo lab today, getting familiar with the environment..
+
+The idle version is 3.5.3. I can access python 3.6 from the prompt but the command 
+
+>>idle 3.6
+
+does not seem to be available.
+
+Is there another way to access it or will we be using 3.5.3?","Hi Scott, you are right that we have python 3.6 installed on the School machines, but idle 3.5 only... :( So essentially when using idle, you need to use
+
+'   '.format()
+
+rather than
+
+f'  '
+
+Maybe that just to avoid and not waste our time with this kind of issue, I will make sure that all output does not necessitate any formatting! :)
+
+"
+Assignment 1 Question 4,"I have a question about the input of ""Which dice do you want to keep for the second / third roll ?"" . 
+
+If the input are the combination of 'all' and another result which already generated in the first roll, does this become illegal input so I should input again, or the 'all' has been there so I could just ignore the other input and go on next step? 
+
+You haven't mention this case in the example of simulation results, I'm confused with this.","Hi Nan, that is illegal input."
+Quiz 4 Expected Output Doubt,,
+Mid term test time,"At what time is our test on Friday, 8th of September?",6:30pm -- 8:40pm
+Ass - 4,"I see the all possible interaction and there is no '' It is a Straight''
+
+Therefore, is this one is only for simulate() ? or could be a possible output?","Hi Chenyang, it sure could be a possible output."
+I want to check the result with you about quiz 5,"The output of 0 10 300 300 of mine is:
+
+The number of paths from 1 to 1 is: 5463
+
+The number of paths from 1 to 2 is: 2285
+
+The number of paths from 1 to 3 is: 652
+
+The number of paths from 1 to 4 is: 170
+
+The number of paths from 1 to 5 is: 46
+
+The number of paths from 1 to 6 is: 22
+
+The number of paths from 1 to 8 is: 2
+
+Are you the same?","Mine is the same as the other 3 guys:
+
+The number of paths from 1 to 1 is: 5463
+
+The number of paths from 1 to 2 is: 2285
+
+The number of paths from 1 to 3 is: 651
+
+The number of paths from 1 to 4 is: 171
+
+The number of paths from 1 to 5 is: 46
+
+The number of paths from 1 to 6 is: 22
+
+The number of paths from 1 to 8 is: 2"
+Ass 1 - Q4,,
+Ass1 - Q2,,
+assignment Q4 module error,"My program uses a module called inflect but i am not able to install it in ed,my code is running normally after i installed it in my computer,so now what's the solution?","Please do not use nonstandard modules, there is really no need for this one"
+Mid-term exam Lab?,"Hi, which lab exam will be in? and how many questions will be there in the exam?","Hi, there will be I think 25 to 30 questions. "
+Clarification of Quiz 5,,
+Poker Dice Simulate Q,"Just doing just last minute bug-checking on my assignment programs, how should the simulate() function in poker dice behave when given incorrect input? (Strings, negatives, etc)","Answered already Scott, nothing needs to be done, won't be tested."
+Assignment 1 Q 3,"Can you please help m in this regard
+
+My code works fine on my laptop but when i upload here its giving me error
+
+- FileNotFoundError: [Errno 2] No such file or directory: 'wordsEN.txt'",It's case sensitive. So it should be wordsEn.txt and not wordsEN.txt
+Assignment 1 -Q4,,
+Assignment 1 - Q4,,
+ASS1 Q1,,
+A error in ed,,
+Midterm exam,,
+1000 == 1_000?,"It probably a silly question. Is 1000 same with 1_000? I checked with edstem workspace and that said 'Same', but I'm not sure with my understanding. Thanks","Only available in 3.6 though.
+
+https://docs.python.org/3/whatsnew/3.6.html#whatsnew36-pep515"
+Lab 5 Solutions,Not sure when you usually post these up but keen to get looking at the solutions for Lab 5 and Quiz 4.,"Hi Scott, I thought I had posted them, but clearly not... Fixed, thanks."
+Midsem Questions,"Confirming again the exam consists of lab1-lab4  and lab5 Q2?
+
+Please correct me if I am wrong.","Hi Ahmed, it covers all flagged questions from the first 5 labs."
+problem of ed,,
+"Lab3 Question3 Finding special triples of the form (n, n + 1, n + 2)",,
+quiz 5,,
+Lab3 Q4, ,
+Assignment 1 marks,Are you able to confirm if we will receive our assignment 1 marks before or after the mid-term exam?,"Hi Fred, not before."
+lab4 pascal triangle output,,
+Nine_Puzzle,"""It can be shown that the puzzle is solvable iff the permutation of the integers 1, . . . , 8, determined by reading those integers off the puzzle from top to bottom and from left to right, is even.""
+
+I do not quite understand the implication of this sentence in the nine_puzzle problem.  What actually does 'permutation' mean in this sentence?",It means the configuration of the puzzle. This link is helpful. https://math.stackexchange.com/questions/293527/how-to-check-if-a-8-puzzle-is-solvable
+Cover more and deeper about DP,"In today's lecture, only about 20 minutes left for dynamic programming, which is definitely not enough. DP is a powerful tool and I find the most difficult part is to find the transition equations for each state. Could you talk more about DP in next Monday's lecture? Thanks","Yes Tianle, you are right, I will indeed go over this material on Monday."
+Interest in COMP9024 being offered this coming summer session?,"It would have been better to set up a proper survey, but that should do... Please express your interest in case you would like COMP9024 to be offered this summer (not for me, I would not be the lecturer).","Yes, I am Interested.
+
+9024 is really a good course and if you are the lecturer it will be great."
+"Doubt in Mid Term Questions, Lab 5: 9 puzzle","Hi Eric ! In the Lab 5 ""9 puzzle"" question I had difficulty understanding this statement: ""iff the permutation of the integers 1, . . . , 8, determined
+ by reading those integers off the puzzle from top to bottom and from left to right, is even. ""
+
+If I am unable to understand what the question asks of me during the Mid Term Test can I ask anyone(Invigilator) for clarification ?","Hi Feng, I was referring to this notion:
+
+https://en.wikipedia.org/wiki/Parity_of_a_permutation
+
+You sure can ask questions to the invigilator during the exam, Amrut."
+Mistake in question 4,"When I did the question 4 in the mid-term exam, I found that the output in PDF and the output in testdoc are different..In PDF, it says The Beroth... pair is ..., However, in testdoc, it says The Beroth.... is...,which removes the word 'pair'.. So which should we follow? Or both are correct?","Yes Fengting, no worries, I will use regular expressions and match what matters for all exercises."
+problems about mid-term exam,"I'm Zhu BIN   z5137034
+, your student.
+
+In tonight's exam, I have a significant problem about my exercise 3 and 4.
+
+I'm pretty sure that my output is the same as the expected outputs, but the auto-test system showed that I didn't pass the tests, None of them! But with the help of tutor, we checked my outputs, finding out that my outputs are perfectly same as pridicted outputs. So I'm just wondering what's wrong with my codes or the system...
+
+Could you please help me to check my exercise 3 and 4 please ~  I really need your help,","Hi Zhu, I guess it's because python (or the doctest module) considers a tab and 4 spaces are not the same. I've got the similar problem that the output seemed to be the same but I couldn't pass the test. After I tried to change tabs in my output to spaces, and I passed it. Maybe we're used to write program in such IDEs that can correct our tab&space problem automatically. But when coding on IDLE, just try to do it by yourself and be careful with these invisible 'traps'.
+
+Hope it helps,"
+remote access lab machines?,"Hi, is there a way to remote access lab machines in GUI? SSH method is command prompt only.I'd like to remote access from windows..",http://taggi.cse.unsw.edu.au/FAQ/Really_quick_guide_to_VLAB/
+Quiz 6 cycle decomposition,,
+IDLE Debugger Issue?,,
+Quiz 6 error handling,I didn't get the point of ' class PermutationError' what is it used for? And how we may use is. I did't find any instruction on that one.,FYI: https://julien.danjou.info/blog/2016/python-exceptions-guide
+Exception Doubt,,
+Quiz 6 - Doctest File,,
+Quiz 6 inverse function,"def inverse(self):
+    values=([c for cycle in self.cycles for c in cycle])
+    inv=Permutation("","".join(str(c) for c in test))
+    return inv
+Hi. I'm trying to get the values from the cycles (self.cycles) generated (which is a list of tuples) into a sequence of integers separated by comma to pass to a new Permuation object. However, I can't figure out how to convert it from either list or tuple or string to comma separated integers without creating variables for each value, which won't be possible when the number of values can vary.  The above code snippet obviously does not work because each number will be represented as a string.
+
+Any help would be much appreciated.","We talked about both uses of * , applied to function arguments, and applied to function parameters. Don't you want Permutation(*values)?
+
+As an aside, why do you put parentheses around [c for cycle in self.cycles for c in cycle]?"
+about quiz6 submission,"Today I'm trying to submit my quiz6.py on ed, but didn't pass all of the tests. 
+
+I mean only those one with exceptions didn't pass, because the predicted output contain the work directory on your computer, which doesn't match our directory on ed.
+
+I'm sure I've fulfilled all of the functionalities, but can not pass the auto-tests, that means I can not submit my result.
+
+What should we do?","Hi Bin, I do not match the work directory on my computer, I submitted my code on Ed and it passes all tests, so it has to be something else."
+Quiz 6 - trailing comma,"For quiz 6, if we have a Permutation of length = 1, should there be a trailing comma when we call __repr__?
+
+>>> Permutation(length = 1)
+
+Permutation(1,)?","Hi Timothy, yes, as (1,) is a tuple consisting of 1 element, whereas (1) is the number 1 surrounded by parentheses. This is one of the places where Python is not very elegant.
+
+"
+Quiz - 6 Empty Permutations Multiplication,"Professor,
+
+p1 = Permutation()
+
+p2 = Permutation()
+
+p1 * p2 should be ""()"" or raise an error?","Hi Jose, ()."
+Quiz 6 - Permutations into cycles,"With quiz 6 and the decomposition into cycles. Could anyone point me in the direction of any resources to find the syntax of how to do it. I understand the theory behind cycle notation, just can't remember seeing the process being done anywhere.",Eric explained the quiz in Sep 7th Lecture. Quiz explaining starts at 2:02:28. 
+Quiz 6 - Dealing with Repetitions,"Hi Eric, there are no  examples showing repetitions ( Ex: (1, 2,2,3,4,6) ). Are we supposed to show ""Cannot generate permutation from these arguments"" Error ? Or repetitions won't be a part of the testing space ? ","Hi Amrut, that is incorrect arguments indeed, you should generate the ""Cannot generate permutation from these arguments"" error."
+Lab_7 Q3 The Target puzzle,"I was working on Lab_7 Q3 and got some minor issues with the solution.
+
+
+Sample output:
+
+In decreasing order of length between 9 and 5:
+
+l solution of length 9
+
+2 solutions of length 6
+
+6 solutions of length 5
+
+My output:
+
+In decreasing order of length between 9 and 5:
+
+1 solution of length 9
+
+2 solutions of length 6
+
+6 solutions of length 5
+
+There must be a mistake in the sample output where 1 (one) was written as l (L).
+
+/////////////////
+
+/////////////////
+
+print(target)
+
+___________
+
+
+| I | M | R |
+
+___________
+
+| V | O | Z |
+
+___________
+
+| A | T | K |
+
+___________
+
+After ""target.change_target('IVAKZRMO', 'DAFNEMRS')"",
+
+Sample output:
+
+___________
+
+
+| D | T | M |
+
+___________
+
+
+| A | S | E |
+
+___________
+
+
+| F | R | N |
+
+___________
+
+
+My output:
+
+___________
+
+
+| D | R | M |
+
+___________
+
+| A | S | E |
+
+___________
+
+| F | T | N |
+
+___________
+
+
+Since ""T"" was not in the change_target strings, from my understanding it should remain in its place, which is at the bottom row. I was not quite clear why it was moved to the top row.","Hi Feng, indeed ""l"" instead of ""1"", fixed everywhere. You are right about target change, the pdf displays the correct output, fixed under Challenges. And I also realised that __repr__ did not display the closing parenthesis, fixed everywhere. Thank you for your careful reading!"
+Quiz 6 - Difference between q=p1*p2 and p2*=p1,"Hi ! Can someone kindly explain to me again how the result of q is different from p2. Are they not similar operation, albeit done using different syntax ?(I know I am missing something critical, can't figure out what though.) 
+
+<Extract from Quiz 6 pdf>
+
+>>> p1 = Permutation(5, 4, 3, 2, 1)
+
+>>> p2 = Permutation(2, 4, 1, 5, 3)
+
+>>> q = p1 * p2
+
+>>> q
+
+Permutation(3, 5, 1, 4, 2)
+
+>>> p2 *= p1
+
+>>> p1
+
+Permutation(5, 4, 3, 2, 1)
+
+>>> p2
+
+Permutation(4, 2, 5, 1, 3)","The order of your arguments is important.
+See if q = p1 *  p2 is the same as q = p2 * p1. They are not commutative, wrongly assume ""*"" operation to be commutative. "
+Something tricky about the method 'round',"When I use the function 'round' in A1Q4， I find it can not reduce extra digits correctly. Can you please explain why?a=0.03885
+print(round(a,4))
+b=3.885
+print(round(b,2))
+0.0389
+3.88Above is my test code, i got two different outputs. But I think round(b,2) should be 3.89.
+","Hi Fengting, the following explains.a = 0.03885
+b = 3.885
+print(f'{a:.16f}')
+print(f'{b:.16f}')0.0388500000000000
+3.8849999999999998
+
+"
+invalid character in identifier,"When I test the command Permutation(’No Way’) it gives an exception:
+
+invalid character in identifier
+
+It seems the character ’ is causing the error. But how should I handle this? I'm unable to find answer through google.","Hi Fangqian, no, first do not use hard coded code points like 39 in your program, second it is all about the input, not your program, I will test your program with ascii characters, not the non-ascii kind of quote that you pasted from the pdf, this is what you have to edit. Answered already a while ago, this is due to copying and pasting from the pdf, you have to edit the apostrophe and replace it by the ascii apostrophe."
+"Assignment 1 results, staggered?","Some people already have all their assignment 1 results, whereas others have only received q1 or q1&4.
+
+Just wondering if they're coming out piecemeal or if there's something wrong.. been refreshing email all day :D","Hi Scott, I ran the mailing scripts for the 4 questions this morning, but I know from experience that delays can be experienced. Personally, I have received the result for Q1 only, hence I am one of the worst affected by this unbearable uncertainty of when will the others will come up, I have clicked on the refresh button so much that my right index is close to forever ruined. At some point, if the queue seems not to want and flush out, I will run the scripts again."
+Quiz 6: Permutation(length = 100000),"Can you please share the max length for which the code should work? I mean could it be very huge number or something within 10k range.
+
+My program currently crash with Permutation(length = 100000), there would be too many cycles for huge length so I assume it may not that big number, or do i need to optimise it, please confirm ","I will test it with smaller numbers, no need to optimise."
+Ceiling of Inputs for Quiz and Assignment |Quiz and Assignment,"Hi, I am not sure if this particular question has been asked previously. (I know these questions being asked for specific Quizzes and Assignments) 
+
+How are we supposed to know that the program is optimized enough to handle the test cases provided for final evaluation after being submitted on ed ?
+
+Is it expected of us to keep optimizing the code to the best of our ability ?  
+Shouldn't we get some kind of input ceiling as part of our specification pdf ? ","I think that keeping problems open, letting you think about optimisation (whether it is appropriate or not) and push your solution up to the point where you make a judgement that it is good enough, is best; but I have been weak and often provided upper bounds."
+Assignment 2 -- marking of the corner numbers,"I was working on Assignment 2, when I noticed after marked_tex_output(), the smaller (candidate) numbers are scattered to different corners. I was not quite clear to which criteria they were placed into the specific corners, since in J. F. Crook's paper, he just put all candidate numbers together. 
+
+Could you please show me the rule to locate the candidate numbers? ","Hi Feng, they are put at fixed positions (just so that it looks nice), the examples show you where each marked number is supposed to be."
+"Testing of Assignment 1, question 3",,"There was a small mistake in the marking script in that tests 15 to 18 did not exit, so they all naturally ""fail"". As shown in the commands and expected outputs file, there were 14 tests for that question, for a total mark of 2.5, so just ignore tests 15 to 18 and their alleged ""failure""."
+Question about forced sudoku,,
+Can we share/discuss our test cases?,Can we share our test cases? those which we do ourself and are not part of the quiz/assignment pdfs.,"Hi Shoaib, sure, that is perfectly fine."
+penalty field,,
+Enquiry for assignment2,"In the assignment 2,  for the extreme sample as follows,  the position(0,0) can not be filled in any number obviously. So what should we do when it call the forced_tex_output() or worked_tex_output() function?
+
+Print 0 for forced_tex_output()?
+
+Print null for marked_tex_output() or worked_tex_output()?
+
+sample.txt:
+
+0 2 3 1 0 0 0 0 0
+
+4 5 6 0 0 0 0 0 0
+
+7 8 9 0 0 0 0 0 0
+
+1 0 0 0 0 0 0 0 0
+
+0 0 0 0 0 0 0 0 0
+
+0 0 0 0 0 0 0 0 0
+
+0 0 0 0 0 0 0 0 0
+
+0 0 0 0 0 0 0 0 0
+
+0 0 0 0 0 0 0 0 0
+
+","Hi Junnan, we call the forced_tex_output() and worked_tex_output() functions only when the preassess() function says that there might be a solution (as done with the 5 sample test cases).  Here we can apply the other methods. This is a case where forced has the same output as bare. We do not distinguish between not solving because the problem is not solvable, or because the techniques we use are too limited."
+"output about quiz 6,__repr__()","In this thread, you mentioned that when we call __repr__, it should have a trailing comma. and 'print' method should not have a trailing comma. However, in the expected output you send to us, test 4, there is no trailing comma..Is it a mistake or I misunderstand what you said in that thread?","Hi Fengting, answered there. Please accept my apologies for this, as said there, next quiz will be out of 2.1, let us not spend excessive time on this, it is not worth it."
+Quiz 7,"There are 2 entiries for Quiz 7:
+
+Quiz 7
+
+Quiz 7 - checking you did not cheat.
+
+Should we put the solution in both?","Hi Sekhar, Quiz 7 is enough, I will download the submissions from Quiz 7 and from Quiz 7 only."
+Quiz 7 PDF,Please upload the PDF for Quiz 7.,"Hi Swarna, as there are more files for this quiz, the pdf is the tarred archive."
+quiz 7 regarding checking did you cheat.,"When we run our code on quiz 7 --checking you did not cheat and it says ""passed"" that means I have not cheated and my code is valid right?","Hi Sushma, it only means that you did not ""cheat"". To check that your code is actually correct (on the sample tests), you have to use Quiz 7 (the other one).
+
+"
+Quiz 7 chaking cheat,"In Quiz 7 when I test my code in the cheat checking part, it out put:
+
+super().__init__(L)
+
+You cheated!
+
+however, that is the code for initializing the linkedlist that your provide.
+
+How should I deal with it?","Hi Kevin, I guess you inserted lines in the stub, as that line occurs before line 8."
+Numpy version,What version of numpy are you going to use to test the assignment?,"Hi Rod, there is no need for numpy for the assignment, but of course you can use it. I always have the latest version."
+File does not exist,"If a file does not exist, should the error be a FileNotFoundError? Or should it also be a SudokuError: Incorrect input?","Hi Rod, I won't test it, FileNotFoundError is fine."
+Assignment 2: further solving of Test 3 and 5 using preemptive set technique only,,
+ass2 discussion,,
+Lab7 N-queens: how should I optimize this program further?,,
+[Quiz7 / Test Case] Maximum length of input?,"I recursively implemented Quiz7, and it shows Recursion error when I test it with an input longer than 994. (RecursionError: maximum recursion depth exceeded)
+
+Is there any test case with a big sized input? If so, I will newly make it using iteration.","Hi Jinwoo, I will test smaller lists so that is not an issue. Still as a valuable exercise you should try and come up with an iterative solution."
+Quiz 7 problem,,
+Quiz 7 AttributeError,,
+Quiz 7 Problem,,
+Quiz 8,,
+Quiz 8,,
+Will quiz8 test extreme situation?,"I am testing the extreme situation of quiz6, for example, the grid is like
+
+grid=[
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[0,0,2,0,0,0,0,0,0,0],
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[0,0,0,0,0,0,0,0,2,0],
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[0,0,0,0,0,0,0,0,0,0],
+
+[1,0,0,0,0,0,0,0,0,0],
+
+]
+
+and the input is like 0 1 5 5 5, start from the middle. I could not get the solution due to too heavy calculation. Any of you could get solution in such situation? Is these situations need to consider?",Your program should indeed be able to handle such a case within a few seconds. Follow Rod's advice.
+Official marks,"How can we confirm our official marks? We can calculate the marks based on the mid-term formula but is there any official marks somewhere that we can confirm like give, etc. Currently, give doesn't tell any mark for 9021.","The official mark is the mark you have received, Shoaib. I do not use give indeed."
+quiz8,"If has a point and all of three directions can not be chosen, so this means there is no way to get this number or we need to back last point and test another three directions","Hi Chenyang, you need to backtrack to the previous point and take another direction from there. You might have to backtrack all the way to the starting point."
+Assignment 2 test script,,
+Lab 7 the Target puzzle,"I cannot understand why target.change_target(’JUDGMENTS’, ’ABCDEFGHI’) is not satisfied condition below 
+
+___________
+
+| S | M | E |
+
+___________
+
+| N | G | U |
+
+___________
+
+| J | T | D |
+
+___________
+
+len(JUDGMENTS) == len(ABCDEFGHI) and they are different
+
+'JUDGMENTS' are distinct and occur in 'SMENGUJTD'
+
+after replacing it is a valid target
+
+___________
+
+| I | E | F |
+
+___________
+
+| G | D | B |
+
+___________
+
+| A | H | C |
+
+___________
+
+So, why it shows 'The target was not changed'
+
+
+• It has a method named change_target(), that takes two arguments, to_be_replaced and
+
+to_replace, both meant to be strings. The target will be modified if:
+
+– to_be_replaced and to_replace are different strings of the same length;
+
+– all letters in to_be_replaced are distinct and occur in the current target;
+
+– replacing each letter in to_be_replaced by the corresponding letter in to_replace
+
+yields a valid target.","Hi Junkai, because there is no word made of the letters ABCDEFGHI, the specs also say (the target) consisting of 9 distinct (uppercase) letters, from which it is possible to create one 9-letter word"
+About Quiz 8,About quiz 8 i have question that should I write all my code in the function explore_depth_first or I can define some other functions by myself?,"No Jianyu, a location cannot be visited more than once. You can define other functions that would be called by explore_depth_first(), though there is not really a use for it. 
+
+"
+The target puzzle has no Run button,,
+Quiz 8 additional test,,
+clarification about preemptive set,,
+Final exam,What should we practice for final exam? Are they the lab challenges excuding the ones before mid-term?,"Hi Shekhar, all labs from the beginning, so I can get a chance to target some of the easiest questions again."
+Assignment 2,"I notice that for sudoku 4, it can be completely worked out by implementing preemptive set method while for sudoku 5 the question has not been completely accomplished yet. So we just follow the progress that can be mostly made but do not need to fully work it out? Thank you for your answer!
+
+",A simple Google search should give you the answer.
+ass2 --- preassess functions,"I wrote the preassess() function and it makes me confused
+
+My function is to test three situations (row , column ,box) and if all passed it will return the ''There might be a solution.''  (it is worked in my computer)
+
+However, in the 'ed' it shows me No Output. but if I change return to print , it will pass test.
+
+So, how to explain this situation.","Hi Chenyang, preassess() is indeed supposed to print out the appropriate statement, not return a string. If preassess() returns a string s and you call preassess() from the Python prompt, then s will be displayed, but if you call preassess() from within a script, then the return value, s, is just lost."
+Data in the class,"I face a problem in the class, I want to use some result from other function which means it must execute that functions at first, otherwise, it shows error
+For example, after forced_tex_output(), I get a list to store number and name is ''self.result'', then I want to use this list in  marked_tex_output() but it shows me "" self.result is not define''. Unless, I run forced_tex_output() at first.
+
+I just want to run marked_tex_output() directly without forced_tex_output() at first.
+How could I execute current function without use that at first?","If I'm understanding you correctly it sounds like the calculation of 'self.result' is required by both forced_tex and marked_tex.
+
+Why not make it a separate function that they both call when needed?"
+Quiz 8 - Expected Outputs,"Could somebody confirm the expected output for the following inputs? 
+
+Enter five integers:  0 10 9 7 11
+
+Here is the grid that has been generated:
+
+    6 6 0 4 8 7 6 4 7 5
+
+    9 3 8 2 4 2 1 9 4 8
+
+    9 2 4 1 1 5 7 8 1 5
+
+    6 5 9 3 8 7 7 8 4 0
+
+    8 0 1 6 0 9 7 5 3 5
+
+    1 3 9 3 3 2 8 7 1 1
+
+    5 8 7 1 4 8 4 1 8 5
+
+    8 3 9 8 9 4 7 1 9 6
+
+    5 9 3 4 2 3 2 0 9 4
+
+    7 1 1 2 2 0 1 8 6 8
+
+With North as initial direction, and exploring the space clockwise,
+
+the path yielding a sum of 11 starting from (9, 7) is:
+
+[(9, 7), (8, 7), (8, 6), (9, 6)]
+
+and 
+
+Enter five integers: 0 10 9 7 14
+
+Here is the grid that has been generated:
+
+    6 6 0 4 8 7 6 4 7 5
+
+    9 3 8 2 4 2 1 9 4 8
+
+    9 2 4 1 1 5 7 8 1 5
+
+    6 5 9 3 8 7 7 8 4 0
+
+    8 0 1 6 0 9 7 5 3 5
+
+    1 3 9 3 3 2 8 7 1 1
+
+    5 8 7 1 4 8 4 1 8 5
+
+    8 3 9 8 9 4 7 1 9 6
+
+    5 9 3 4 2 3 2 0 9 4
+
+    7 1 1 2 2 0 1 8 6 8
+
+With North as initial direction, and exploring the space clockwise,
+
+the path yielding a sum of 14 starting from (9, 7) is:
+
+[(9, 7), (8, 7), (7, 7), (6, 7), (6, 6)]",same here
+Quiz 8 - X and Y,"So, the spec mentions being given an X and Y coord, and the given variables are labeled thusly. However the solutions seem to work on a (column, row) system with which would actually make it (y,x)
+
+So can someone confirm for me is (0,0) at the top left, or bottom left? and is (0,1) to the left or or below (0,0)?","(0,0) is top left
+(0,1) is to the left
+
+When you move vertically you have to change the variable of X and when you move Horizontally you have to change the Variable of Y axis. Because
+The first number in (0,0) represents the location of the first list in grid then second number represents the location of the  item of list gird[0].
+
+X points to your rows
+
+Y points to your column
+
+.....y
+
+.......0 1 2 3 4 5
+
+x0   2 3 5 6 8 9
+x1   5 8 6 4 8 9
+
+
+So, for us to move vertically from 2 in grid[0][0]
+we need to change it to grid[1][0]
+to move horizontally, grid[0][1]"
+Quiz 8 Question," have a question, if we input 0 2 0 0 1 
+
+This means that the first point or location would be target 1 . So ,what is the final output?  no way ?  or  output is [(0,  0)] ?","[(0, 0)], Lian."
+Queue simulation,,"Thanks to Hui Shao to have pointed out that for inter-arrival time, an exponential distribution, not a Poisson distribution, should be used. This is actually what I did in a previous version of this program, that I modified in different ways, and I stubbornly refused to think that this could be the problem, partly encouraged by what I had been reading, but the relationship between exponential and Poisson distribution is not what I thought it was... The archive for Lecture 9 now contains an amended version of this program."
+Quiz 9 Question,,
+Quiz 9 ,,"I have uploaded an amended version of quiz9 as the specs did not express properly what I had in mind, and the complication of the ill-formulated original formulation is not worth it, so I simplified it, and the expected outputs have changed accordingly. Thanks to Junnan Chen for having pointed this out."
+"Lecture 9: Queue model, Poisson and exponential distribution",,
+Quiz 9 - Expected number of lines of code,"I want to know approximately how many lines of code would you be expecting for Quiz 9 if it were to be written efficiently. Currently my program seems to be pretty large and I am looking for ways to cut it down.Use simple recursion to find max that should be two lines than use the max to fix the tree, in step two fix the tree when reach end and current sum is less < max (again recursion)","Hi Swarnava, you can aim for around 20 lines. "
+Assignment 2,,
+Sudoku forced output for sudoku_4.txt,,
+Quiz 9: Input 0 0 0,"Hi Eric, 
+
+My code handles input 0 0 0 like below, is this correct?",Correct Shekhar.
+lab_9 Q2,"I am confused about that for a given word, how could we efficiently find the list of words that match the word with a 'slot' being replaced by only one letter. Cuz my methods always run for a long time. Could you give me some hint to solve it? Thank you!","Hi Hangyu, the specs provide a hint already, so keep thinking and experimenting if you have time, and otherwise wait for the solution which will come out in a couple of days."
+Quiz9 tree height,"I just noticed tree printing takes time, whenever tree height goes beyond 6 and its quite difficult to verify the output for our test cases (manually) because of too much scroll. Can you please confirm, the depth you going to use in your test cases?
+
+For example, 0 11 11 print too many lines.","Hi Shoaib, you are right, and I will indeed limit test cases to inputs that produce reasonable outputs. (Still printing should take no time when he program is run from the command line; it is a different story when one uses Idle)."
+Lab_10 Q2: Possible subtractions yielding a given sum,"In Q2: I did not understand the reason why ""all ways of inserting minus signs and parentheses in L"" disallows cases like this: 1 - 2 - (3 - 4 - 5). Did you imply that the number of parentheses must be maximal? 
+
+I tried it without setting the number of parentheses to maximal (which is 2*len(L)-4 ), and yielded a result like this:
+
+subtractions((1, 2, 3, 4, 5), 5)
+
+1: 1 - 2 - (3 - 4 - 5)
+
+2: (1 - 2) - (3 - 4 - 5)
+
+3: 1 - 2 - ((3 - 4) - 5)
+
+4: (1 - 2) - ((3 - 4) - 5)
+
+and I found that lines 1, 2, 3 do not contain {2*len(L)-4} parentheses, yet still satisfy the evaluation requirement.","Hi Feng, indeed the intention is that associativity rules are not left implicit, but are always explicit, so only the outmost pair of parentheses is omitted."
+Lab 2: Number of trailing 0s in a factorial,"Hi Eric,
+
+I hope you're well.  Can you please help understand the bold italic statement below?  I'm struggling to understand the steps to:
+
+Split the multiple of 10 into multiple of 2 * 5, and 
+
+the fact that we can use power of five based on statement ""has at least as many multiples of 2 as multiples of 5"".  I assume this is using some mathematical concepts and/or techniques.  I would greatly appreciated point me in the right direction.
+
+N rather N!, hence that does not suffer the limitations of the first two, and is very efficient. The number of trailing 0s in N! is equal to the number of times N! is a multiple of 10, so to the number of times N! is a multiple of 2 × 5. It is easy to verify that N! has at least as many multiples of 2 as multiples of 5. Hence the number of trailing 0s in N! 
+
+Thank you in advance for your help.","We want to find out how many 0’s we have at the end of N!, so how many times 10 divides N!, so how many times 2*5 divides N!
+
+In N!, ever second factor is a multiple of 2 (N! = 2*3*4*5*6*7*8*9*10*…)  whereas every 5th factor is a multiple of 5 (N! = 2*3*4*5*6*7*8*9*10*…), with the first multiple of 2 (2 itself) occurring before the first multiple of 5 (5 itself).
+
+So whatever N has happens to be, we will see more factors of 2 than factors of 5.
+
+So the number of times 2*5 divides N! is equal to the number of times 5 divides N!, as we can always associate a 2 with each 5 we find."
+Assignment 2 Part 2 - Strange error 67d66 <,,
+Quiz 9 generating non negative numbers,,
+Lecture Recording 13-10-2017,I have a problem with the lecture video. The audio seems fine but there is no video at all. Just wanted to check of only I am facing this problem.,"Hi Swarnava, indeed there is nothing I can do about it, as Shekhar says; how annoying! I can just go over what needs to be clarified again on Monday."
+Quiz 10,"I have some problem about  Q10. I cannot understand 'inserting the members of L from those of smallest index of those of largest index results in the same priority queue'. Could you explain it please?
+There are also some ploblem in leacture recording. It does not display image.","Hi Peng, there is another thread that mentions the recording problem, this is irritating,  I can only cover some of the material again on Monday. For the time being I let other students answer your question on the quiz, and will get back to it later if needed."
+Assignment_2,,
+quiz 10 extension,Would you please give us an extension for quiz 10 because of the recording issue? I'm not able to do the quiz without understanding the data structure and the quiz problem.,"Hi Fangqian, sure, I extend by one week"
+Forced method - Sudoku_5_forced.txt,,
+Fixed - Error Metafont Marked and Forced methods when generating Tex files,"I am having problems when I submit part 2 of the assignment
+On my local computer everything is working and diff exits silently when I run diff. I even copyied all expected_sudoku*.tex to my pc and tested with it, as you can see in followed image.However when I try to submit, only marked and worked methods fails and there are some strange logs regarding to metafonts.
+Here is the log for sudoku_3.txt() when call method sudoku.marked_tex_output()
+In my computer all tests are passing for all sudoku_*.txt and generate correctly all *.tex files.
+So, my guess is that I  there is some problem when creating tex files on Ed environment, as there diff exits silently when running on my local workstation.
+The way I am creating tex files is creating a new tex file and print all the content in this file (header + lines + footer):
+What should I do?",
+Assignment2 forced output and marked output,"When I am working on Assignment 2, I find that marked output is based on forced output. That means forced_tex_output should run first, then marked_tex_output can get a correct output. However, I find that in Ed, they are tested separately. That means I have to put forced_tex_output in marked_tex_output so that marked_tex_output can generate a correct tex file. If not, the test on marked_tex_output will go wrong. Is it right to do so?","Hi Fengting, that is correct, this has been said in other posts already."
+Quiz 10,"Can I slightly change the function or add some functions in the pirority_queue_adt? Itried on the ED which is passed, but I am confused about whether I could pass on your examination.","Hi Tianjian, no, a library (be it ours) is not supposed to be modified. Only put code in quiz_10.py. I will use the provided  priority_queue_adt.py for testing. I have no way to let you modify it on Ed, otherwise I would make it read only."
+Assignment 2: Marked and Worked Output Spacing,,
+Worked test cases (3 and 5) are being solved,"I trust you are well.  I have two test cases failing because my implementation is actually finding a valid solution for the worked test cases 3 and 5.
+I don't understand why it's finding a solution unless I've implemented a technique I'm not allowed to.
+Can you provide some guidance how the assignment will be graded if the implementation finds a valid solution to the puzzle?
+Thank you kindly.","Hi Fred, you must have gone beyond the technique described in the paper. Make sure you only force digits in boxes, neither in rows nor in columns, as the paper says. The aim is not to solve the puzzle but to get the output expected from implementing that technique."
+Module for express view of binary trees,,
+Assigment 2 part 1 - ED submission,,
+Assignment 2 empty cell number,,
+Ass-- part2,"I passed all the tests in 'ed'. however, if I directly run the marked_tex_output(), it will produce the file of forced_tex_output() and marked_tex_output(), because I use forced function in the marked and the forced function will create a file of force.tex.","Hi Chenyang, it is not wrong, but it would be preferable to define a helper function that just forces the digits, and that will be used both by the function that produces forced.tex, and by the function(s) that deal with marking and ""working"" the grid."
+Another question on forced_tex..,,
+submit,,
+assignment2 can't pass the test even have the exactly same result.,,
+file uploaded in ass part 2,"My final file was uploaded in part 2 and after the deadline I realized it should be uploaded in part 1 as well, which results in late submission in part 1. Will this be penalized?",Thanks for reminding. I've got the same problem. Just totally forgot the part 1 after finishing part 2.
+Solution for Change-making problem: greedy solution(Lab7),"Please if you could upload the solution for Change-making problem: greedy solution.
+It is not available.","Hi Himanshu, thanks for pointing it out, fixed. Also recall that all solutions are  available under Resources."
+The Pythonic Way,"This may be an abstract question, but what recommendations do you have as to coding more pythonically, thinking more pythonically, and understanding more pythonic code? After looking at the lab solutions, I definitely would not immediately approach a solution the same way.
+Is it simply based on greater experience coding in python?","Hi Isaac, it sure comes with experience. I recommend the reading of Fluent Python by Luciano Ramalho, and Python Cookbook, by Jones and Beazley. Everyone should come across constructs that revive memories of code previously written with the realisation that there is such a better way, sometimes associated with a slight feeling of embarrassment... Then try and find out where is that code that you realised could be improved thanks to what you read, and improve it indeed. I gave you lots of programs many of which you most likely did not have time or ""incentive"" to look at, as part of the lecture material and also as optional lab questions. I strived to cover a broad range of pythonic constructs and techniques. If you study this code that should help, and of course you can read plenty of good code from a variety of sources, but I think you can learn a lot from many of the sample programs which are part of the course."
+Assignment2 late submission,I upload the code on Assignment 2 Part 2. I just find out the problem and re-upload it on Part 1 and the page showed that it is a late submission. Sorry for the trouble. Will it be penalised?,"Good that you resubmitted successfully, Fengting."
+About the question COMP9021 Assignment2,I have only submitted the part of my sudoku code in assignment 2 part 1 and all code in assignment 2 part2 . Are there any wrong with it ?,"Please stop asking about penalties and marks, just resubmit the way it should be submitted! The specs are clear, the whole program has to be uploaded in Part 1."
+Assignment_2,I coded some extra print sentences to deal with the bugs but forgot to delete them. Does it matter?,"Hi Hangyu, of course if any extra lines are printed out, your outputs will be different to the expected outputs"
+"Quiz 10: Using external functions to modify underscored attributes (e.g. _data, _length)","Is it acceptable to modify attributes using functions outside the class. For instance, I tried to delete a node in the specific position, so I wrote a function to do exactly similar as the pq.delete() method do, but to deal with the given node rather than the root. In this way, I'll need to modify attributes like pq. _data, pq._length outside the class. My program worked in this way, but I'm not sure this methodology is acceptable. After all underscored attributes should not be modified outside the class.","Hi Tianpeng, it is syntactically possible, hence it is acceptable, but it is clearly poor design and you should indeed, for the sake of the exercise, try and find a better way.
+
+"
+quiz10,"I always face this situation in my code and how could I solved it.
+because the last time, I lost all the mark in the end and it show me there is incorrect of using space and tab, so, I really worry about this even through I passed all the test","Hi Chenynag, you have to make sure that you configure your editor so that spaces are inserted when pressing the tab key."
+Mid-exam questions and solutions,Can you please post mid-term exam questions and solutions on ED as I wanna review it?,"Hi Fengting, you could reconstruct the questions from what I sent you, and the solutions really bring nothing new compared to the similar lab exercises, but I uploaded questions and solutions under Resources (General)."
+Assignment 2,"My all test for out files are failed. I think the name of out files may be wrong. 
+My files name is like ""sudoku_???_bare.tex"".",
+Latex header footer Template file,"I used a file body.tex to store the header and footer of the latex code and was reading that to generate a tex file. All the testcases worked fine but in final assessment it only checked sudoku.py WITHOUT body.tex which makes it fail ALL the tex generating test cases. 
+
+I would appreciate it if it can be sorted out. There was no restriction in using the file approach mentioned, if this was known hardcoding the template in doesn't take that much of an effort any way.","I made the same mistake as you, and then remembered that Eric had mentioned before that he would only take the sudoku.py file for marking. Which is a shame.The end of Section 4.1 of the assignment 2 specification notes that only the sudoku.py file will be marked."
+Video that shows the mechanism of various sorting algorithms,,"I found this interesting video on Youtube, in which they added some sound to various sorting algorithms as they run. 
+
+Some of them, like quick sort, merge sort and shell sort, are actually quite intuitive for finding out how they work.
+
+https://www.youtube.com/watch?v=kPRA0W1kECg&t=25s"
+Solutions of Assignments,Could you post the solutions of assignment 1 and 2 on Ed? Thought that would be a help for us to prepare the final exam.,"Hi Yuzheng, we usually do not post solutions to the assignments, and in any case that would not be useful to prepare for the final, focus on the flagged lab questions."
+Final exam questions.,I have some queries regarding the final exam questions. I think I have heard you mention that we will be getting questions from lab 1 to 10. Is that correct?,"Hi Smrita, correct, all flagged questions from Lab 1 to Lab10 are potential candidates for similar exam questions."
+Lab 8 unable to understand,"Hi Eric/Mates,
+
+I am unable to understand this question of the Fibonacci codes. How is F4 + F6 = 11 coded by 00101?","Fibonacci sequence: 1,1,2,3,5,8,13...
+F4 ie fourth element of sequence: 3
+F6 ie sixth  element of sequence: 8
+
+F4+F6=11
+
+k=6
+b2 b3 b4 b5 b6 = 00101"
+Lab 9: word_ladder,"Hello Eric, in your solution for word_ladder you have used defaultdict to store words as list and set. Could you explain why ? (You could have used defaultdict(list) for both). Also, cProfile did show a very small gain of time by using list and set as compared to only list. But operation wise I felt there wasn't any difference in creating the two dictionaries and using them as a list. Kindly explain. Thank you.  ","Hi Amrut, if we can choose between lists and sets then it is preferable to go for sets as they are more efficient. I could have used defaultdict(list) for both; I could also have used defaultdict(set) for both, and the latter would be preferable to the former. I used defaultdict(list) rather than defaultdict(set) so as to work with the two loops
+for i in range(len(contextual_slots[slot])):
+                    for j in range(i + 1, len(contextual_slots[slot])):
+rather than ranging twice over a set, and then having to check every time that both members of the set (words) are different to record that either can be followed by the other. Starting j with i+1 guarantees that both words are different."
+Last lecture,Was the last lecture on October 19 or October 23? There is no recording for the latter.,October 19
+Lab Stubs,"Hi Eric, I know this is a very lazy request. But if possible could you kindly provide the stub for all the labs in a .zip file. I have over-written most of the stubs provided on edstem and would find it helpful to practice on empty stubs. Sorry for the inconvenience.
+
+Edit 1: I couldn't any way to recover the initial stubs. ","Hi Amrut, that is not very convenient for me to do as they are scattered everywhere and amongst other files, but you can easily retrieve them (save your files first): click the 3 dots in the top right corner and then ""Reset to Scaffold"".
+
+"
+Generalised priority queue,"I have this error of ""TypeError: unsupported format string passed to list.__format__"" when I submit challenge 28. I checked that the output is correct but if I run the test script command of:
+
+[print(f'{pq.delete():2}{pq._data[: len(pq)+1]}') for _ in range (len(pq))]
+
+It will have the error. May I requested to get it fixed please?
+
+Thanks,","Hi Saya, I am confused, you talked about ""getting it fixed"", but I checked again that the provided solution could be submitted and passed the tests successfully, so I guess there is an error in your code, and of course just based on that error message, I cannot tell what it is..."
+Final Grade,Comp9021 is the only CS course I took in semester 2. All my other courses(maths) have already made provisional final marks available to students. When will the final result of this course come out and how can I check it? (Through Moodle or Ed)?,"Hi Fangqian, I just follow the standard procedure for the official results to be released by Central admin."
+Course material,,"http://www.cse.unsw.edu.au/~cs9021 now links to Ed.
+
+A few words on where the course material is to be found.
+
+All the material associated with lectures, labs, quizzes and assignments can be downloaded from Resources (it will be made available week by week).
+
+Most if not all of the lab exercises will be replicated under Challenges, so you can develop and test your solutions there.
+
+All quizzes and assignments will be replicated under Assessments, so you can develop and test your solutions there.
+
+The Jupyter notebook sheets to practice Python syntax, and those we create during lectures, are also available under Workspaces. Click on ""Fork"" to create your own copy of the selected sheet and play with it.
+
+Under Lessons, you find the three videos ""Introduction to Unix"", ""Running Python code"" and ""Software Installation and Jupyter"", and associated pdfs.
+
+A reminder that the lecture recordings are accessible at https://moodle.telt.unsw.edu.au/enrol/index.php?id=27660
+
+All discussion has to be made on Ed, we are not using WebCMS any more. 
+
+"
+Final exam,,"The final exam will take place on Wednesday the 15th of November from 13:45 to 17:00.
+
+You will find your seat allocation at http://www.cse.unsw.edu.au/~cs9021/17s2/seating/final/seating.html
+Do not join the lab before you are invited to do so. Indeed, the inviligators will first log into the exam environment, before inviting you to get into the lab and leave your belongings (mobile phone included) against a wall, with the exception of your student card which you should have with you, pens, and possibly a dictionary as requested by some of you. You will then be able to log into your personal account using your own credentials (zid, zpass). You will have access to all applications available on the School servers but neither to the Internet nor email. Most of you will use Idle. Those of you who wish to use another IDE can explore what is available on the School lab machines, but note that you cannot have any personal configuration file, you will have a ""clean"" account without any personal file.
+
+The exam questions will be displayed as a pdf, as well as a cheat sheet.
+
+Idle will be open and a number of .py files will be available that you will just have to edit and save; they will be collected for marking, so the whole procedure is straightforward, you just have to edit, test and save. A simple right click will give you access to Idle and the pdf's in case you ""lose"" them.
+
+Scrap paper will be provided, do not take your own paper."
+Final exam: change from Lyre to Drum,,"As there seems to be aircon issues in Lyre, we will use Drum instead. Students who were allocated to Lyre should instead go to Drum, same seat number.
+
+http://www.cse.unsw.edu.au/~cs9021/17s2/seating/final/seating.html has been updated accordingly."
