@@ -1,0 +1,133 @@
+*{font-size: 14px; padding:0; margin:0;}
+
+.he1{
+	margin:auto;
+	line-height: 100px;
+	overflow: hidden;
+	text-shadow: 0 0 2px black; 
+	text-align: center;
+	font-size: 25px;
+	color:blue;
+	height: 80px;
+	}
+.main{
+ position: relative;
+ margin: auto;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 100px;
+ border: 1px solid;
+ width: 830px; /*430 */
+ height: 500px;
+}
+
+.msgInput{
+ display: block;
+ width: 806px;
+ height: 60px;
+ margin: 10px auto;
+ 
+}
+.sendbtn{
+ position: absolute;
+ width: 100px;
+ height: 29px;
+ bottom: 5px;
+ right: 10px;
+ border-width: 0px;
+ border-radius: 3px; 
+ background: #1E90FF; 
+ cursor: pointer; 
+ outline: none; 
+ font-family: Microsoft YaHei; 
+ color: white;
+ font-size: 17px;
+}
+
+.sendbtn:hover { 
+	background: #5599FF;
+}
+
+.uploadbtn{
+ position: absolute;
+ width: 100px;
+ height: 29px;
+ bottom: 5px;
+ right: 250px;
+}
+
+.fileLabel{
+ position: absolute;
+ width: 120px;
+ height: 29px;
+ bottom: 5px;
+ right: 120px;
+ display: inline-block;
+ line-height: 30px;
+ text-align: center;
+ border: 1px;
+ border-radius: 5px;
+ cursor: pointer;  
+ font-family: Microsoft YaHei; 
+ color: white;
+ background: #1E90FF;
+
+}
+
+.fileLabel:hover { 
+	background: #5599FF;
+}
+
+.content{
+ list-style: none;
+ width: 810px;
+ height: 380px;
+ margin: 5px auto;
+ border: 1px dotted #D1D3D6;
+ overflow-y: scroll;
+}
+.msgContent{
+ width:auto;
+ max-width: 730px;
+ height: auto;
+ word-break: break-all;
+ margin: 5px;
+ padding: 3px;
+ /* border-radius: 5px; */
+}
+ 
+.content .left{
+ float: left;
+ text-align: left;
+ border-style:inset;
+ /* background-color: lightgrey; */
+ border-right:hidden; 
+}
+.content .right{
+ float: right;
+ text-align: right;
+ border-style:outset;
+ /* background-color: yellowgreen; */
+ border-right:hidden; 
+}
+
+
+.pull-left {
+  float: left;
+  width: 60px;
+  height:60px;
+}
+
+.pull-right {
+  float: right;
+  width: 60px;
+  height:60px;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+	max-width: 95%;
+	max-height: 95%;	
+}
