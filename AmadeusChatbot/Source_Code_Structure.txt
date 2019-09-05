@@ -1,0 +1,39 @@
+.
+├── api_demo                            # the dialogflow api
+│   └── api_test.py                     # the dialogflow api in the project
+├── backend                             # backend files 
+│   ├── googlesearch                    # web searching files
+│   │   └── main.py                     # for some questions not in the database, use google searchto find answers.
+│   ├── chatbot.py                      # backend code for the chatbot,logic control also in this
+│   └── format_change.py                # formatchage for output athentic purpose
+├── chatbot_train                       # clean data files
+│   └── train.py                        # script to clean the data from ed_forum
+├── chatbot_train                       # clean data files
+│   ├── dao.py                          # database access class
+│   ├── data_operation.py               # processing data
+│   └── insert_database.py              # used to insert common information and qapair into database
+├── fronted                             # fronted code for the chatbot
+│   ├── bot.jpg                         # logo
+│   ├── user.jpg                        # logo
+│   └── script.js                       # fronted files
+├── get_common_information              # collect information from web 
+│   ├── data.json                       # data from handbook
+│   ├── get_information.py              # this file is used to get the common information about IT from unsw handbook
+│   └── page_operation.py               # web page operation 
+├── get_information_from_ed             # collect information from ed forum
+│   ├── after_clean_ver_two.csv         # ed forum data after processing 
+│   └── ed_information_for_9021.csv     # original data from ed forum  
+├── get_information_from_stackoverflow  # collect information from stackoverflow  
+│   ├── get_stackoverflow.py            # pull the question-id and answer-id from stackoverflow and write these as 'q_and_a.json'
+│   ├── good_format_q_a.py              # use the stackoverflow API to get the question-body and answer-body
+│   ├── q_and_a.json                    # matching question number and answer number
+│   └── right_format0.json              # format for the data 
+├──  machine_learning                   # files for machine learning
+│   ├── LSTM_model                      # files for LSTM nodel
+│   │   ├── lstm_model.py               # code for LSTM training
+│   │   ├── my_predict_model.py         # code for predict results
+│   │   ├── myembedding.py              # making word embedding
+│   │   ├── preprocessing.py            # preprocessing 
+│   │   └── data                        # embedding data
+│   ├── ir_model                        # ir model files 
+└── └── └── model.py                    # information retrival model

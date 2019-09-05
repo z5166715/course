@@ -1,0 +1,9 @@
+Precondition
+On windows:
+Environment: python3.6+
+IDE: pyCharm(https://www.jetbrains.com/pycharm/download/)
+Packages:
+Click  Flask  Jinja2 Keras  Keras-Applications  Keras-Preprocessing Markdown MarkupSafe  Pillow  PyMySQL PyYAML Werkzeug absl-py aniso8601	astor  	attrs   	boto   	boto3 	botocore   cachetools certify chardet dialogflow  docutils  flask-restplus  	gastgensim google-api-core google-auth google-pasta googleapis-common-protos	grpcio	h5py  	idna   	itsdangerousjmespath  joblib	jsonschema nltknumpy  pandas  pip protobuf   	pyasn1  pyasn1-modules pyrsistent  pytesseract  python-dateutil  pytz   requests  rsa  s3transfer  scikit-learn scipy  setuptools	six sklearn smart-open  tensorboard tensorflow	
+Other:
+Donwload Tesseract
+(https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-setup-4.00.00dev.exe)
